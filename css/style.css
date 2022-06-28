@@ -1,0 +1,272 @@
+ul
+{
+    text-decoration: none;
+    list-style: none;
+}
+/* Header */
+.header
+{
+    background-image: url("../img/events-heavenly-header\ \(1\).jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+}
+.layer
+{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+.header p
+{
+    font-size: 60px;
+}
+/* End of Header */
+
+/* Side-Navbar */
+nav
+{
+    position: fixed;
+    left: -260.575px;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    z-index: 999999;
+}
+nav .content
+{
+    background-color: #414658;
+}
+nav .openMenu
+{
+    font-size: 30px;
+    cursor: pointer;
+}
+nav a
+{
+    font-size: 27px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+nav .fa-xmark
+{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+nav a:hover , .fa-xmark:hover
+{
+    color: #7D3C49 !important;
+}
+
+/* End of Side-Navbar */
+
+/* Singers */
+.card-header
+{
+    background-color: #E68285;
+    font-size: 24px;
+    cursor: pointer;
+}
+.card-body
+{
+    background-color: #CCCCCC;
+    display: none;
+    
+}
+.card-body p
+{
+    font-size: 14px;
+}
+/* End of Signers */
+
+/* Time */
+.time
+{
+    background-image: url(../img/invitation-2508607__340.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+}
+.clock
+{
+    border: 1px solid #fff;
+    background-color: transparent;
+    float: left;
+    width: 20%;
+}
+.clock h3
+{
+    margin: 40px;
+    font-size: calc(1.1rem + .6vw) !important;
+
+}
+.clear
+{
+    clear: both;
+}
+/* End of Time */
+
+/* Contact  */
+.contact p ,span,.contact i 
+{
+    color: rgb(119, 119, 119);
+}
+.icons i
+{
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s !important;
+}
+.icons i:hover
+{
+    background-color: rgb(214, 46, 51);
+    color: white !important;
+}
+.contact h4
+{
+    color:rgb(68, 68, 68);
+}
+#demo
+{
+    color: rgb(214, 46, 51);
+}
+.form-control 
+{
+    color: rgb(119, 119, 119) !important;
+    border-radius: 0px !important;
+    font-size: 19px;
+}
+form button
+{
+    background-color: rgb(214, 46, 51);
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+#numberOfLetters
+{
+    color: rgb(214, 46, 51);
+}
+/* End of Contact  */
+
+/* Theme */
+#theme{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:50%;
+    right: 0;
+}
+#colorBox
+{
+    background-color: rgb(196, 184, 184);
+}
+#theme span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.blue
+{
+    background-color: rgba(59, 59, 125,0.6);
+}
+.yellow
+{
+    background-color: rgb(147 141 68 / 60%)
+}
+.red
+{
+    background-color: rgba(214, 46, 51,0.6);
+}
+.green
+{
+    background-color: rgba(25, 143, 25,0.6);
+}
+.fa-cog{
+    cursor: pointer;
+}
+/* End of Theme */
+
+/* ArrowUp */
+#arrowUp
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: rgba(214, 46, 51,0.6);
+    z-index: 9999999999999999;
+    display: none;
+}
+#arrowUp i
+{
+    font-size: 14px;
+}
+
+/* Spinner */
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.cube1, .cube2 {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+    25% { 
+      transform: translateX(42px) rotate(-90deg) scale(0.5);
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    } 50% { 
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% { 
+      transform: translateX(42px) translateY(42px) rotate(-180deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    } 75% { 
+      transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    } 100% { 
+      transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+    }
+}
+#loading{
+    position: fixed;
+    top:0;
+    left: 0;;
+    bottom: 0;
+    right: 0;
+    background-color: #ccc;
+    z-index: 9999999;
+    display: flex;
+}

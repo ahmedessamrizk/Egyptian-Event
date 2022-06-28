@@ -1,0 +1,52 @@
+
+@media only screen and (max-width: 580px) {
+    .time-blocks h3
+    {
+        font-size: calc(0.4rem + .6vw) !important;
+    }
+    #open
+    {
+        font-size: 17px !important;
+    }
+    .icons i
+    {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .clock h3
+    {
+        margin: 10px !important;
+    }
+    #open
+    {
+        font-size: 20px;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .clock h3
+    {
+        margin: 30px;
+    }
+    .icons 
+    {
+        margin:  0px 0px 20px;
+        text-align: center;
+    }
+} 
+    
+
+
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}
