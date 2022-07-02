@@ -32,16 +32,20 @@ $("a[href^='#'").click(function(e){
 
 //Show/Hide the side navbar
 $("#open").click(function(){
-    if($("nav").css('left') == `0px`)
-    {
-        $("nav").animate({'left':  `-=${$(".content").outerWidth(true)}`} , 500);
-        $("#header-content").animate({'padding-left': '-280px'} , 600);
-    }
-    else
-    {
-        $("nav").animate({'left':  `0px`} , 500);
-        $("#header-content").animate({'padding-left': '280px'} , 500);
-    }
+    // $(window).resize(function(){
+        if($("nav").css('left') == `0px`)
+        {
+            $("nav").animate({'left':  `-=${$(".content").outerWidth(true)}`} , 500);
+            if($(window).width() >= '760px');
+                $("#header-content").animate({'padding-left': '-280px'} , 600);
+        }
+        else
+        {
+            $("nav").animate({'left':  `0px`} , 500);
+            if($(window).width() > '760px');
+            $("#header-content").animate({'padding-left': '280px'} , 500);
+        }
+    // })
 })
 $(".fa-xmark").click(function(){
     if($("nav").css('left') == `0px`)
@@ -55,10 +59,10 @@ $(".fa-xmark").click(function(){
         $("#header-content").animate({'padding-left': '280px'} , 500);
     }
 })
-
 //Change Navbarcolor
 let details = $("#open").offset().top;
 $(window).scroll(function(){
+    console.log("hello");
     //console.log($(window).scrollTop());
     if($(window).scrollTop() > details -50)
     {
