@@ -62,8 +62,6 @@ $(".fa-xmark").click(function(){
 //Change Navbarcolor
 let details = $("#open").offset().top;
 $(window).scroll(function(){
-    console.log("hello");
-    //console.log($(window).scrollTop());
     if($(window).scrollTop() > details -50)
     {
         $("#open").css('backgroundColor' , chosenColor);
@@ -181,3 +179,48 @@ $(window).ready(function(){
     $("#loading").remove();
     $("body").css('overflow' , 'auto');
 });
+
+//Validation
+$("form input").next().css('display' , 'none');
+$("form input").keyup(function(e){
+    let inputField = e.target
+    let inputFieldValue = inputField.value;
+    if($(inputField).attr('id') == "yourName")
+    {
+        if(validationName(inputFieldValue) == false)
+            $(inputField).next().css('display' , 'block');
+        else
+            $(inputField).next().css('display' , 'none');
+    }
+    else
+    {
+        if(validationEmail(inputFieldValue) == false){
+            $(inputField).next().css('display' , 'block');
+            $(inputField).css('margin','10px 0px 0px');
+            $(inputField).next().css('margin','0px 0px 10px');
+        }
+        else{
+            $(inputField).next().css('display' , 'none');
+            $(inputField).css('margin','10px 0px');
+        }
+    }
+    
+})
+
+
+function validationName(name)
+{
+    let regex = /^[a-zA-Z ]*$/;
+    if(regex.test(name))
+        return true;
+    else
+        return false;
+}
+function validationEmail(email)
+{
+    var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(regex.test(email))
+        return true;
+    else
+        return false;
+}

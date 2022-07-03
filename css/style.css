@@ -149,6 +149,10 @@ form button
     border: none;
     font-size: 14px;
 }
+#yourEmail
+{
+    margin: 10px 0px;
+}
 #numberOfLetters
 {
     color: rgb(214, 46, 51);
