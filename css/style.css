@@ -7,7 +7,7 @@ ul
 .header
 {
     background-image: url("../img/events-heavenly-header\ \(1\).jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     height: 100vh;
 }
